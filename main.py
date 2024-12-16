@@ -49,8 +49,9 @@ def main():
         for member in asteroids:
             for bullet in shots:
                 if member.colliding(bullet):
-                    member.kill()
-                    dddd
+                    member.split()
+                    bullet.kill()
+
 
         # Draw on the screen
         screen.fill("black")
